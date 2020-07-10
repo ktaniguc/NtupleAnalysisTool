@@ -14,7 +14,6 @@ void NtupleAnalysisTool::Loop()
     Long64_t ientry = LoadTree(jentry);
     if (ientry < 0) break;
     nb = fChain->GetEntry(jentry);   nbytes += nb;
-    std::cout << probePt << std::endl;
     // if (Cut(ientry) < 0) continue;
   }
 }
