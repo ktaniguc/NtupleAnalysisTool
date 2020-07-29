@@ -17,8 +17,10 @@ int main(int argc, char *argv[])
   HistData histData;
   TFile *fout = new TFile(outroot, "recreate");
   nat.Loop(histData);
+  nat.draw_dimuin1roi(histData, outpdf);
   fout->Write();
   delete fout;
 
+  histData.HistEnd();
   return 0;
 }

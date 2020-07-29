@@ -47,6 +47,7 @@ class NtupleAnalysisTool {
     virtual void     Init(TTree *tree);
     virtual void     Loop(HistData histData);
     void fill_dimuin1roi(HistData histData);
+    void draw_dimuin1roi(HistData histData, TString pdf);
     virtual Bool_t   Notify();
     virtual void     Show(Long64_t entry = -1);
     

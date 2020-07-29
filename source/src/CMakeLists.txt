@@ -13,6 +13,7 @@ add_library(src
     NtupleAnalysisTool.cxx
     EventSelectionTool.cxx
     HistFillTool.cxx 
+    HistDrawTool.cxx 
 )
 target_include_directories(src
     PUBLIC 
