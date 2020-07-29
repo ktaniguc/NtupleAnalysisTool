@@ -11,6 +11,8 @@ add_definitions(${ROOT_CXX_FLAGS})
 add_library(src 
     SHARED
     NtupleAnalysisTool.cxx
+    EventSelectionTool.cxx
+    HistFillTool.cxx 
 )
 target_include_directories(src
     PUBLIC 
