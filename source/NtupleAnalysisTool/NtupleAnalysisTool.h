@@ -12,6 +12,11 @@
 #include <TROOT.h>
 #include <TChain.h>
 #include <TFile.h>
+#include "TString.h"
+#include "../NtupleAnalysisTool/HistData.h"
+#include "/home/ktaniguc/RootUtils/RootUtils/TLegend_addfunc.h"
+#include "/home/ktaniguc/RootUtils/RootUtils/TCanvas_opt.h"
+#include "/home/ktaniguc/RootUtils/src/rootlogon.C"
 
 // Header file for the classes stored in the TTree if any.
 #include "vector"
@@ -84,7 +89,8 @@ public :
    virtual Int_t    GetEntry(Long64_t entry);
    virtual Long64_t LoadTree(Long64_t entry);
    virtual void     Init(TTree *tree);
-   virtual void     Loop();
+   virtual void     Loop(HistData histData, int begin_entry, int limit_entry);
+   virtual void     DrawHist(TString outputpdf);
    virtual Bool_t   Notify();
    virtual void     Show(Long64_t entry = -1);
 };

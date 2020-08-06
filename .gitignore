@@ -1,1 +1,3 @@
 build
+run/plot/*
+run/output/*
