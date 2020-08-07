@@ -22,7 +22,7 @@ void NtupleAnalysisTool::Loop(HistData histData, int begin_entry, int limit_entr
   }
 }
 
-void NtupleAnalysisTool::DrawHist(TString pdf)
+void NtupleAnalysisTool::DrawHist(TString pdf, HistData histData)
 {
   TCanvas_opt *c1 = new TCanvas_opt();
   c1->Print( pdf + "[", "pdf");

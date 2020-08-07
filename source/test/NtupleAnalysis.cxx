@@ -1,4 +1,5 @@
 #include "../NtupleAnalysisTool/NtupleAnalysisTool.h"
+#include "/home/ktaniguc/RootUtils/src/rootlogon.C"
 
 int main(int argc, char *argv[])
 {
@@ -14,7 +15,7 @@ int main(int argc, char *argv[])
   TString outputpdf = "plot/"+dir+"/"+output+".pdf";
   TFile *fout = new TFile(outputroot, "recreate");
   nat.Loop(histData, begin_entry, limit_entry);
-  nat.DrawHist(outputpdf);
+  nat.DrawHist(outputpdf, histData);
   fout->Write();
   delete tree1;
   delete fout;
