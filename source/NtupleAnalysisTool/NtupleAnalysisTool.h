@@ -13,9 +13,9 @@
 #include <TChain.h>
 #include <TFile.h>
 #include "TString.h"
-#include "../NtupleAnalysisTool/HistData.h"
-#include "/home/ktaniguc/RootUtils/RootUtils/TLegend_addfunc.h"
-#include "/home/ktaniguc/RootUtils/RootUtils/TCanvas_opt.h"
+#include "HistData.h"
+#include "TLegend_addfunc.h"
+#include "TCanvas_opt.h"
 
 // Header file for the classes stored in the TTree if any.
 #include "vector"
